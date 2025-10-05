@@ -19,6 +19,10 @@ else:
     DEBUG = True
     ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://ant-space-tour-app-eyhpdhbqg6c5bfgg.spaincentral-01.azurewebsites.net'
+]
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
