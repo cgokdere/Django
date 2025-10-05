@@ -17,7 +17,11 @@ if 'WEBSITE_HOSTNAME' in os.environ:
     ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 else:
     DEBUG = True
-    ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+    ALLOWED_HOSTS = ['127.0.0.1', 
+                     'localhost',
+                     "ant-space-tour-app.azurewebsites.net", 
+                      "ant-space-tour-app-eyhpdhbqg6c5bfgg.spaincentral-01.azurewebsites.net"
+                      ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://ant-space-tour-app-eyhpdhbqg6c5bfgg.spaincentral-01.azurewebsites.net'
