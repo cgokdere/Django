@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-k9tiibql&3=q^crbw@+$71pe2b-8o)&vj10#s4a@pw@p9z*z!_
 # SECURITY WARNING: don't run with debug turned on in production!
 # Azure'da otomatik False, local'de True
 if 'WEBSITE_HOSTNAME' in os.environ:
-    DEBUG = False
+    DEBUG = True
     ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 else:
     DEBUG = True
